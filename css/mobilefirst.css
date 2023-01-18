@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+/* menu navigation */
+
+header {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(6, 190, 6);
+    font-size: 1.2rem;
+    transition-timing-function: ease;
+    transition-duration: .2s;
+}
+
+a:hover {
+    color: rgb(0, 255, 0);
+    text-decoration: underline;
+}
+
+/* Feito pro Erick Silva */
+.feito {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    text-align: center;
+    box-shadow: 5px 4px 0px #000;
+}
+
+/* main content */
+
+
+.container-cards {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards {
+    height: 390px;
+    width: 330px;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 0 black;
+    transition-timing-function: ease;
+    transition: .3s;
+}
+
+
+
+.card1:hover {
+    background-color: #3b5998;
+    color: #fff;
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 5px black;
+}
+
+.card2:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 5px black;
+}
+
+.card3:hover {
+    background-color: #c4302b;
+    color: white;
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 5px black;
+}
+
+.img {
+    text-align: center;
+}
+
+.btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-card1 {
+    margin-top: 6.5rem;
+}
+
+.btn-card2 {
+    margin-top: 1.3rem;
+
+}
+
+.btn-card3 {
+    margin-top: 6.5rem;
+}
+
+.btn1 {
+    transition-timing-function: ease;
+    transition: .3s;
+}
+
+.btn1, .btn2, .btn3 {
+    transition-timing-function: ease;
+    transition: .3s;
+}
+
+
+.btn1:hover,.btn2:hover,.btn3:hover {
+    background-color: #fff;
+    
+    
+}
+
+.paragrafos {
+    text-align: center;
+}
+
+p {
+    padding-top: 10px;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+img {
+    height: 4rem;
+}
+
+button {
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.26);
+    font-size: .9rem;
+}
+
+footer > p {
+    background-color: black;
+    font-size: 5rem;
+}
+
+
+
+
