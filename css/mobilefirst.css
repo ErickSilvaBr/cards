@@ -11,17 +11,21 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* menu navigation */
 
 header {
-    height: 80px;
+    height: 60px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;    
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 
@@ -56,6 +60,7 @@ a:hover {
     border-top: none;
     text-align: center;
     box-shadow: 5px 4px 0px #000;
+    position: relative;
 }
 
 /* main content */
@@ -66,6 +71,9 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 1.5rem;
 }
 
 .cards {
@@ -172,6 +180,48 @@ button {
 footer > p {
     background-color: black;
     font-size: 5rem;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 320px) {
+    body {
+        padding-bottom: 80rem;
+    }
+
+    main {
+        padding: 0 40px;
+    }
+    .btn-card1 {
+        margin: 4rem 0;
+
+    }
+
+    .btn-card2 {
+        margin: .4rem 0;
+    }
+
+    .btn-card3 {
+        margin: 6rem 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+
+    main {
+        padding: 0 30px;
+    }
+    .cards {
+        height: 350px;
+        width: 310px;
+    }
+
+    
+
+    p {
+        line-height: 1.35rem;
+    }
+    
 }
 
 
